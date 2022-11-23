@@ -13,6 +13,7 @@
         <!---------- Header ---------->
         
         <header>
+
             <div class="center">
                 <div class="logo">
                     <img src="assets/logo.png" alt="Logo">
@@ -24,9 +25,9 @@
 
                 <nav>
                     <div class="menu">
-                        <a href="#">Home</a>
+                        <a href="#inicio">Home</a>
 
-                        <a href="#">Sobre</a>
+                        <a href="#sobre">Sobre</a>
 
                         <a href="#">Contato</a>
 
@@ -45,24 +46,22 @@
 
                             <a href="#">Contato</a>
                         </div>
-                    </div>
-
-                    <!---------- Termino do Menu Mobile ---------->
-                </nav>
-
-                <!---------- Termino da Nav ---------->
+                    </div> <!-- Termino do Menu Mobile -->
+                </nav> <!-- Termino da Nav -->
             </div>
-        </header>
 
-        <!---------- Termino do Header ---------->
+        </header> <!-- Termino do Header -->
 
         <!---------- Main ---------->
 
         <main>
-            <section class="main">
+            <!---------- Inicio ---------->
+
+            <section class="main" id="inicio">
+
                 <div class="center-main">
                     <div class="main_cta">
-                        <h2>One Page Bootstrap Website Template</h2>
+                        <h2>One Page Website Template</h2>
     
                         <p>
                             We are team of talanted designers
@@ -113,11 +112,13 @@
                         </div>
                     </div>
                 </div>
+
             </section>
 
             <!---------- Sobre ---------->
     
-            <section class="sobre">
+            <section class="sobre" id="sobre">
+
                 <div class="center-main">
                     <div class="chamada-sobre">
                         <h2>Sobre a Danki</h2>
@@ -137,11 +138,13 @@
                         </p>
                     </div>
                 </div>
+
             </section>
 
             <!---------- Conquistas ---------->
             
             <section class="conquistas">
+
                 <div class="center-main">
                     <div class="conquistas-single">
                         <h2>+100 mil</h2>
@@ -167,13 +170,17 @@
                         <p>Awards</p>
                     </div>
                 </div>
+
             </section>
 
             <!---------- Outros ---------->
 
             <section class="outros">
-                <div class="center-main">
-                    <img src="assets/design.png" alt="Dev" class="dev">
+
+                <div class="center-outros">
+                    <video preload="auto" controls autoplay poster="assets/capa.png" width="520" height="294">
+                        <source src="https://user-images.githubusercontent.com/106715331/199651033-acd63fc6-856b-450b-9ce7-e423c590b427.mp4" type="video/mp4">
+                    </video>
 
                     <div class="sobre-outros">
                         <h2>Lorem ipsum dolor</h2>
@@ -187,11 +194,13 @@
                         </p>
                     </div>
                 </div>
+
             </section>
 
             <!---------- Patrocínio ---------->
 
             <section class="patrocinio">
+
                 <div class="center-main">
                     <div class="patrocinio-img">
                         <img src="assets/AlphaTec.png" alt="AlphaTec">
@@ -209,10 +218,79 @@
                         <img src="assets/Pense S.A.png" alt="Pense S.A.">
                     </div>
                 </div>
-            </section>
-        </main>
 
-        <!---------- Termino do Main ---------->
+            </section>
+
+            <!---------- Depoimentos ---------->
+
+            <section class="depoimentos">
+
+                <div class="center-main">
+                    <div class="depoimentos-chamada">
+                        <h2>Depoimentos</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero perspiciatis pariatur voluptates facere ab? Qui, error placeat, tenetur sunt a eos ex, velit exercitationem quaerat voluptatibus dignissimos perspiciatis voluptatum sequi!
+                        </p>
+                    </div>
+
+                    <div class="carrousel">
+                        <div class="carrousel-single">
+                            <div class="carrousel-box">
+                                <p>
+                                    <span class="material-symbols-outlined">format_quote</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae, explicabo voluptatem tempora odio aperiam magnam tempore et alias, ad officiis corrupti sequi neque quidem maiores laboriosam sapiente voluptatibus natus.
+                                    <span class="material-symbols-outlined">format_quote</span>
+                                </p>
+                            </div>
+
+                            <img src="assets/foto-perfil-1.png" alt="Perfil">
+
+                            <p>João Pedro</p>
+
+                            <span id="title">Instrutor</span>
+                        </div>
+
+                        <div class="carrousel-single">
+                            <div class="carrousel-box">
+                                <p>
+                                    <span class="material-symbols-outlined">format_quote</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae, explicabo voluptatem tempora odio aperiam magnam tempore et alias, ad officiis corrupti sequi neque quidem maiores laboriosam sapiente voluptatibus natus.
+                                    <span class="material-symbols-outlined">format_quote</span>
+                                </p>
+                            </div>
+
+                            <img src="assets/foto-perfil-1.png" alt="Perfil">
+
+                            <p>João Pedro</p>
+
+                            <span id="title">Instrutor</span>
+                        </div>
+
+                        <div class="carrousel-single">
+                            <div class="carrousel-box">
+                                <p>
+                                    <span class="material-symbols-outlined">format_quote</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat beatae, explicabo voluptatem tempora odio aperiam magnam tempore et alias, ad officiis corrupti sequi neque quidem maiores laboriosam sapiente voluptatibus natus.
+                                    <span class="material-symbols-outlined">format_quote</span>
+                                </p>
+                            </div>
+
+                            <img src="assets/foto-perfil-1.png" alt="Perfil">
+
+                            <p>João Pedro</p>
+
+                            <span id="title">Instrutor</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main> <!-- Termino da Main -->
+
+        <!---------- Script ---------->
+        
     </body>
     <script src="script.js"></script>
 </html>

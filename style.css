@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
@@ -7,6 +9,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+video {
+    border-radius: 15px;
+}
+
+/*
+Header
+*/
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
 .center {
     max-width: 1100px;
     margin: 0 auto;
@@ -14,20 +32,10 @@
     display: flex;
 }
 
-.menu-mobile {
-    display: none;
-}
-
-header {
-    background-color: #ffffff;
-    padding: 20px 0;
-    border-bottom: 1px solid #c8c8c8;
-}
-
 .logo {
     display: flex;
     align-items: center;
-    color: #16507b;
+    color: rgb(22, 80, 123);
 }
 
 .logo h1 {
@@ -43,7 +51,7 @@ nav {
 }
 
 nav a {
-    color: #124265;
+    color: rgb(18, 66, 101);
     transition: 0.5s;
     font-size: 14px;
     text-decoration: none;
@@ -51,199 +59,32 @@ nav a {
 }
 
 .menu a:hover {
-    color: #007bff;
+    color: rgb(0, 123, 255);
     transition: 0.5s;
 }
 
 .menu .btn-menu {
-    background-color: #007bff;
+    background-color: rgb(0, 123, 255);
     display: inline-block;
     padding: 8px 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 8px;
+    transition: 0.5s;
 }
 
 .menu .btn-menu:hover {
-    background-color: #124265;
-    color: white;
+    background-color: rgb(18, 66, 101);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
 }
 
-/* Section Main */
+/*
+Menu Mobile
+*/
 
-section.main {
-    background-image: url(assets/1586388.jpg);
-    padding: 70px 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.menu-mobile {
+    display: none;
 }
-
-.center-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 2%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.main_cta {
-    width: 100%;
-    margin: 60px 0;
-    text-align: center;
-}
-
-.main_cta h2 {
-    color: #16507b;
-    font-size: 40px;
-}
-
-.main_cta p {
-    color: gray;
-    font-size: 19px;
-    margin: 10px 0;
-}
-
-.main_cta button {
-    background-color: #007bff;
-    display: inline-block;
-    padding: 8px 30px;
-    color: white;
-    border-radius: 6px;
-    font-size: 22px;
-    border: 0;
-    cursor: pointer;
-}
-
-.diferenciais {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.diferenciais-single {
-    background-color: white;
-    width: 23%;
-    margin-right: 2%;
-    padding: 50px 20px;
-    border-radius: 10px;
-}
-
-.diferenciais-single span {
-    color: #124265;
-    font-size: 23px;
-}
-
-.diferenciais-single h2 {
-    color: #124265;
-    margin: 10px 0;
-    font-size: 17px;
-}
-
-.diferenciais-single p {
-    color: gray;
-    font-size: 14px;
-    line-height: 30px;
-}
-
-.sobre {
-    padding: 88px 0;
-}
-
-.chamada-sobre {
-    width: 100%;
-    text-align: center;
-}
-
-.chamada-sobre h2 {
-    color: #124265;
-    text-transform: uppercase;
-}
-
-.chamada-sobre p {
-    font-size: 14px;
-    color: gray;
-    margin: 10px 0;
-}
-
-.conteudo-sobre {
-    display: flex;
-    text-align: justify;
-}
-
-.conteudo-sobre p {
-    margin: 0 20px;
-}
-
-.conquistas {
-    background-color: #ecf6ff;
-    padding: 20px 0;
-}
-
-.conquistas-single {
-    width: 22%;
-    margin-right: 3%;
-    text-align: center;
-    color: #124265;
-}
-
-.conquistas-single h2 {
-    font-size: 30px;
-}
-
-.patrocinio {
-    background-color: #ecf6ff;
-    padding: 20px 0;
-}
-
-.patrocinio-img {
-    width: 25%;
-    
-    transform: scale(1.1);
-    
-}
-
-.patrocinio-img img {
-    max-width: 100%;
-    transition: 1s;
-    filter: grayscale(100%);
-}
-
-.patrocinio-img img:hover {
-    transform: scale(1.1,1.1);
-    filter: grayscale(0);
-}
-
-.outros {
-    padding: 40px 0;
-}
-
-.dev {
-    width: 50%;
-}
-
-.sobre-outros {
-    width: 50%;
-    padding: 0 50px;
-}
-
-.sobre-outros h2 {
-    color: #124265;
-    margin-bottom: 20px;
-}
-
-.sobre-outros p {
-    color: #444;
-    font-size: 14px;
-    margin-bottom: 14px;
-}
-
-.dev img {
-    max-width: 100%;
-}
-
-
-
-/* Menu Mobile */
 
 .menu-items {
     position: absolute;
@@ -251,8 +92,8 @@ section.main {
     top: 60px;
     width: 100%;
     text-align: center;
-    background-color: white;
-    border-bottom: 2px solid #007bff;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(0, 123, 255);
     display: block;
     opacity: 0;
     transition: 0.4s;
@@ -271,17 +112,288 @@ section.main {
 .menu-items a {
     display: block;
     text-decoration: none;
-    color: #007bff;
+    color: rgb(0, 123, 255);
 }
 
+/*
+Section Main
+*/
 
+section.main {
+    background-image: url(assets/1586388.jpg);
+    padding: 88px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
+.center-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.main_cta {
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
 
+.main_cta h2 {
+    color: rgb(22, 80, 123);
+    font-size: 40px;
+}
 
+.main_cta p {
+    color: rgb(128, 128, 128);
+    font-size: 19px;
+    margin: 10px 0;
+}
 
+.main_cta button {
+    background-color: rgb(0, 123, 255);
+    display: inline-block;
+    padding: 8px 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    font-size: 22px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
 
+.main_cta button:hover {
+    background-color: rgb(20, 68, 102);
+    transition: 0.4s;
+}
 
+.diferenciais {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.diferenciais-single {
+    background-color: rgb(255, 255, 255);
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.diferenciais-single span {
+    color: rgb(18, 66, 101);
+    font-size: 23px;
+}
+
+.diferenciais-single h2 {
+    color: rgb(18, 66, 101);
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.diferenciais-single p {
+    color: rgb(128, 128, 128);
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/*
+Section Sobre
+*/
+
+.sobre {
+    padding: 55px 0;
+}
+
+.chamada-sobre {
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2 {
+    color: rgb(18, 66, 101);
+    text-transform: uppercase;
+}
+
+.chamada-sobre p {
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+    margin: 10px 0;
+}
+
+.conteudo-sobre {
+    display: flex;
+    text-align: justify;
+}
+
+.conteudo-sobre p {
+    margin: 0 20px;
+}
+
+/*
+Section Conquistas
+*/
+
+.conquistas {
+    background-color: rgb(243 249 253);
+    padding: 20px 0;
+}
+
+.conquistas-single {
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color: rgb(18, 66, 101);
+}
+
+.conquistas-single h2 {
+    font-size: 30px;
+}
+
+/*
+Section Outros
+*/
+
+.outros {
+    padding: 55px 0;
+}
+
+.center-outros {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobre-outros {
+    width: 50%;
+    padding: 0 50px;
+}
+
+.sobre-outros h2 {
+    color: rgb(18, 66, 101);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre-outros p {
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+/*
+Section Patrocínio
+*/
+
+.patrocinio {
+    background-color: rgb(243 249 253);
+    padding: 20px 0;
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+.patrocinio-img {
+    width: 19%;
+    transform: scale(1.1);
+}
+
+.patrocinio-img img {
+    max-width: 100%;
+    transition: 1s;
+    filter: grayscale(100%);
+}
+
+.patrocinio-img img:hover {
+    transform: scale(1.1,1.1);
+    filter: grayscale(0);
+}
+
+.dev {
+    width: 50%;
+}
+
+.dev img {
+    max-width: 100%;
+}
+
+/*
+Section Depoimento
+*/
+
+.depoimentos {
+    padding: 55px 0;
+}
+
+.depoimentos .depoimentos-chamada {
+    text-align: center;
+}
+
+.depoimentos-chamada h2 {
+    color: rgb(18, 66, 101);
+    text-transform: uppercase;
+}
+
+.depoimentos-chamada p {
+    color: rgb(128, 128, 128);
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.carrousel {
+    display: flex;
+}
+
+.carrousel-single {
+    width: 31%;
+    margin: 2%;
+    text-align: center;
+}
+
+.carrousel-single img {
+    /* max-width: 100%; */
+    width: 70px;
+    height: 70px;
+    display: inline;
+    margin: 17px 0;
+}
+
+.carrousel-box {
+    padding: 20px;
+    background-color: rgb(243, 249, 253);
+    border-radius: 10px;
+}
+
+.carrousel-box p {
+    color: #4b4b4b;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.carrousel-box span {
+    color: rgb(201, 227, 245);
+    font-size: 19px;
+    padding: 0 8px;
+}
+
+#title {
+    color: rgb(204, 204, 204);
+}
+
+.carrousel-single > p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*
+Media
+*/
 
 @media screen and (max-width: 768px){
     .menu {
